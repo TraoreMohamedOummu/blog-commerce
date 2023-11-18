@@ -1,0 +1,192 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+  box-sizing: border-box;
+}
+
+
+
+/*Les variables */
+
+:root {
+    --container-color: #1a1e11;
+    --second-color: #0b5ed7;
+    --text-color: #172317;
+    --bg-color: #fff;
+    --green-color: #eee;
+}
+
+::selection {
+    color: var(--bg-color);
+    background-color: var(--second-color);
+}
+
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding: 3rem 0 2rem;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 1000;
+    height: 80px;
+    
+}
+.link {
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+    letter-spacing: 1px;
+}
+.header-background {
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--green-color);
+}
+
+
+
+.container-perso {
+    padding:  0 8rem;
+}
+
+
+nav  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+header .nav-logo {
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: var(--bg-color);
+}
+
+header .nav-logo span {
+    background-color: var(--second-color);
+    border: 1px solid transparent;
+    color: var(--bg-color);
+    padding: 5px;
+    text-transform: uppercase;
+    border-radius: 5px;
+
+}
+
+
+.black{
+    color: var(--text-color);
+}
+
+
+
+
+nav  .nav-icon {
+    transform: translateY(4px);
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--bg-color);
+}
+
+
+/**************** RESPONSIVE Header ****************/
+
+@media only screen and (max-width: 1024px){
+    
+    header {
+        width: 100%;
+        padding:  0 10px;
+    } 
+}
+
+@media only screen and (max-width: 756px){
+
+    .menu-icon {
+        display: block;
+        font-size: 34px;
+    }
+
+
+    .container-perso {
+        padding: 0 10px;
+    }
+
+    header .nav-overflow.open {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.45);
+    }
+    
+    
+  
+    header .nav-logo {
+        font-size: 20px;
+        font-weight: bold;
+        color: var(--bg-color);
+    }
+    
+    
+    nav .nav-menu .nav-item {
+        position: relative;
+    }
+    
+    nav .nav-menu .nav-item a {
+        display: block;
+    }
+
+    
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+
+.home {
+      width: 100%;
+      min-height: 400px;
+      padding: 0;
+      margin: 0;
+      background: var(--container-color);
+      display: grid;
+      align-items: center;
+      justify-content: center;
+}
+
+.home-text {
+      text-align: center;
+}
+
+.home-title {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: var(--bg-color);
+}
+
+.home-title span {
+      color: var(--second-color);
+}
+
+.home-subtitle  {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--bg-color);
+}
